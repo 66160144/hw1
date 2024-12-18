@@ -113,12 +113,10 @@ section img:hover {
 }
 
 .img-highlight {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* ระยะห่างระหว่างภาพ */
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
 }
 
 .img-highlight img {
