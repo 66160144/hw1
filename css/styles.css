@@ -77,3 +77,70 @@ nav a:hover {
         margin: 0 auto;
     }
 }
+/* เนื้อหาหลัก */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section div {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+.img-highlight {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.img-highlight img {
+    text-align: center;
+    justify-content: center;
+}
+
+.imageshl {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+.imagesabout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* เพื่อให้รูปภาพอยู่ตรงกลาง */
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.imageshl {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
