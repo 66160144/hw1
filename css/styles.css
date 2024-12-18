@@ -1,0 +1,165 @@
+/* รีเซ็ตค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* ส่วนหัวของเว็บไซต์ */
+header {
+    background: #799cf7; /* สีพื้นหลัง */
+    color: #fff; /* สีข้อความ */
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+/* เมนูนำทาง */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* เมนูมือถือ */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #fff;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        background-color: #799cf7;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+/* เนื้อหาหลัก */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section div {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+.img-highlight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* ระยะห่างระหว่างภาพ */
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+}
+
+.img-highlight img {
+    text-align: center;
+    justify-content: center;
+}
+
+.imageshl {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+.imagesabout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* เพื่อให้รูปภาพอยู่ตรงกลาง */
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.imageshl {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+/* ข้อความคำบรรยาย */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+/* ส่วนท้ายเว็บไซต์ */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
